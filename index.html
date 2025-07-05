@@ -1,39 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 </head>
+
+
 <body>
+  <div class="container">
+    <div class="wrapper">
+      <header class="header-wrapper">
 
-  Features
-  Company
-  Careers
-  About
+        <nav class="nav-wrapper">
 
-  Login
-  Register
+          <img src="./images/logo.svg" class="snap-logo-img" alt="snap-logo-img">
+          <div class="nav-list-wrapper">
 
-  Make remote work
+            <ul>
+              <il class="nav-item">
+                <div class="nav-item">
+                  <p>Features</p>
+                  <img src="./images/icon-arrow-down.svg" class="arrow-down-icon" alt="arrow-down-icon">
+                </div>
+                <ul class="nav-item-dropdown">
+                  <li>
+                    <img src="./images/icon-todo.svg" class="todo-icon" alt="todo-icon">
+                    <a href="#">Todo List</a>
+                  </li>
+                  <li>
+                    <img src="./images/icon-calendar.svg" class="calendar-icon" alt="calendar-icon">
+                    <a href="#">Calendar</a>
+                  </li>
+                  <li>
+                    <img src="./images/icon-reminders.svg" class="reminders-icon" alt="reminders-icon">
+                    <a href="#">Reminders</a>
+                  </li>
+                  <li>
+                    <img src="./images/icon-planning.svg" class="planning-icon" alt="planning-icon">
+                    <a href="#">Planning</a>
+                  </li>
+                </ul>
+              </il>
 
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
+              <li class="nav-item">
+                <div class="nav-item">
+                  <p>Company</p>
+                  <img src="./images/icon-arrow-down.svg" class="arrow-down-icon" alt="arrow-down-icon">
+                </div>
+                <ul class="nav-item-dropdown">
+                  <li>
+                    <a href="#">History</a>
+                  </li>
+                  <li>
+                    <a href="#">Our Team</a>
+                  </li>
+                  <li>
+                    <a href="#">Blog</a>
+                  </li>
+                </ul>
+                </il>
 
-  Learn more
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+                <il class="nav-item">
+                  <p>Careers</p>
+                </il>
+
+                <il class="nav-item">
+                  <p>About</p>
+                </il>
+            </ul>
+
+            <div class="login-wrapper">
+              <P>Login</P>
+              <div class="register-btn-wrapper">
+                <p>Register</p>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <div class="main-wrapper">
+          <div class="content-wrapper">
+            <h1>Make remote work
+            </h1>
+            <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch
+              productivity soar.
+            </p>
+            <div class="learn-more-btn-wrapper">
+              <p>Learn more</p>
+            </div>
+            <div class="client-list-wrapper">
+              <img src="./images/client-databiz.svg" class="hero-desktop-img" alt="hero-desktop-img">
+              <img src="./images/client-audiophile.svg" class="hero-desktop-img" alt="hero-desktop-img">
+              <img src="./images/client-meet.svg" class="hero-desktop-img" alt="hero-desktop-img">
+              <img src="./images/client-maker.svg" class="hero-desktop-img" alt="hero-desktop-img">
+            </div>
+            <img src="./images/image-hero-desktop.png" class="hero-desktop-img" alt="hero-desktop-img">
+      </main>
+    </div>
   </div>
 </body>
+
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    min-height: 100vh;
+    padding: 50px 20px;
+    line-height: 1.5rem;
+    font-size: 16px;
+    background-color: bisque;
+  }
+</style>
+
 </html>
