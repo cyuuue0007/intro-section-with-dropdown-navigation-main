@@ -24,19 +24,27 @@
             </div>
             <ul class="nav-item-dropdown">
               <li>
-                <img src="./images/icon-todo.svg" class="todo-icon" alt="todo-icon">
+                <div class="nav-item-dropdown-icon-wrapper">
+                  <img src="./images/icon-todo.svg" class="todo-icon" alt="todo-icon">
+                </div>
                 <a href="#">Todo List</a>
               </li>
               <li>
-                <img src="./images/icon-calendar.svg" class="calendar-icon" alt="calendar-icon">
+                <div class="nav-item-dropdown-icon-wrapper">
+                  <img src="./images/icon-calendar.svg" class="calendar-icon" alt="calendar-icon">
+                </div>
                 <a href="#">Calendar</a>
               </li>
               <li>
-                <img src="./images/icon-reminders.svg" class="reminders-icon" alt="reminders-icon">
+                <div class="nav-item-dropdown-icon-wrapper">
+                  <img src="./images/icon-reminders.svg" class="reminders-icon" alt="reminders-icon">
+                </div>
                 <a href="#">Reminders</a>
               </li>
               <li>
-                <img src="./images/icon-planning.svg" class="planning-icon" alt="planning-icon">
+                <div class="nav-item-dropdown-icon-wrapper">
+                  <img src="./images/icon-planning.svg" class="planning-icon" alt="planning-icon">
+                </div>
                 <a href="#">Planning</a>
               </li>
             </ul>
@@ -49,12 +57,21 @@
             </div>
             <ul class="nav-item-dropdown">
               <li>
+                <div class="nav-item-dropdown-icon-wrapper">
+                  <img src="./images/icon-history.svg" class="history-icon" alt="history-icon">
+                </div>
                 <a href="#">History</a>
               </li>
               <li>
+                <div class="nav-item-dropdown-icon-wrapper">
+                  <img src="./images/icon-team.svg" class="team-icon" alt="team-icon">
+                </div>
                 <a href="#">Our Team</a>
               </li>
               <li>
+                <div class="nav-item-dropdown-icon-wrapper">
+                  <img src="./images/icon-blog.svg" class="blog-icon" alt="blog-icon">
+                </div>
                 <a href="#">Blog</a>
               </li>
             </ul>
@@ -164,9 +181,9 @@
     justify-content: space-between;
   }
 
-  .nav-list-wrapper ul {
+  .nav-list-wrapper>ul {
     display: flex;
-    gap: 40px;
+    gap: 56px;
     list-style: none;
   }
 
@@ -203,11 +220,13 @@
     position: absolute;
     top: 100%;
     left: 0;
-    display: none;
+    /*display: none;*/
     flex-direction: column;
     background: white;
     padding: 8px;
     border: 1px solid #ddd;
+    gap: 10px;
+    width: 130px;
   }
 
   .nav-item-wrapper:hover .nav-item-dropdown {
@@ -217,7 +236,29 @@
   .nav-item-dropdown li {
     display: flex;
     justify-content: flex-start;
+    align-items: center;
     gap: 8px;
+  }
+
+  .nav-item-dropdown-icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+  }
+
+  .nav-item-dropdown-icon-wrapper img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    object-fit: contain;
+  }
+
+  .nav-item-dropdown li a {
+    display: block;
+    white-space: nowrap;
   }
 
   .login-wrapper {
